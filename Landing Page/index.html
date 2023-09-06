@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+    <title>LandingPage</title>
+</head>
+
+<body>
+    <header>
+        <img src="Images/main-logo2.png" alt="Brand-logo" class="main-logo">
+        <nav>
+            <ul class="navbar">
+                <div class="dropdn">
+                    <button class="dropbt"><img src="/Images/more.png" alt="more"></button>
+                    <div class="dropcn">
+                        <a href="#newsletter">Newsletter</a>
+                        <a href="#socials-location">Socials</a>
+                    </div>
+                </div>
+
+                <li><a href="#socials-location">Location</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="index.html">Home</a></li>
+
+            </ul>
+        </nav>
+    </header><br>
+
+
+
+    <main>
+
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="/Images/car1.jpg">
+            </div>
+            <div class="mySlides fade">
+                <img src="/Images/car2.jpg" style="object-position: 0% 60%;">
+            </div>
+            <div class="mySlides fade">
+                <img src="/Images/car3.webp" style="object-position: 0% 60%;">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <div class="about-container" id="about">
+            <div class="about1 hidden1">
+                <H1 style="color: aliceblue; font-size: 30px; text-align: right; margin: 0; padding: 0;">
+                    About<br>Us
+                </H1>
+                <p style="color: aliceblue; text-align: right; margin-top: 5px; padding: 0; width: 90%; float: right;">
+                    Welcome to our Elite Auto Heaven, where automotive history comes to life. Explore a breathtaking collection of supercars and vintage automobiles, celebrating the evolution of engineering and style. Don't forget to subscribe our weekely newsletter.</p>
+                <img src="/Images/about1.png" style="object-fit: cover; width: 90%; float: right; " alt="">
+            </div>
+            <div class="about2 hidden2">
+                <img src="/Images/about2.PNG" alt=""
+                    style="display: block; object-fit: cover; width: 90%; float: left; "><br>
+                <h1
+                    style="color: aliceblue; font-size: 30px; text-align: left ; margin: 10px 0 0 0; padding: 0; float: left;">
+                    Our History</h1>
+                <p style="color: aliceblue; text-align: left; margin-top: 5px; padding: 0; width: 90%; float: left;">
+                    Founded in 1990, our car museum has grown into a time capsule of automotive excellence. Started by a group of car enthusiastic friends to showcase their love for cars to the rest of the world. This museum unveils the past, from Model T's to cutting-edge supercars, honoring a century of innovation.</p>
+
+            </div>
+
+        </div>
+        <div class="socials-location-container" id="socials-location">
+            <div class="socials hidden1">
+                <h1 style="color: whitesmoke; margin-bottom: 5px;">Socials</h1><br>
+                <div class="instagram">
+                    <a href="https://www.instagram.com/s_u_r_o_x/" target="_blank" type="button">instagram</a>
+                    <img src="/Images/instagram.png" alt="">
+                </div><br><br>
+                <div class="facebook">
+                    <a href="https://www.facebook.com/surox.das" target="_blank" type="button">facebook</a>
+                    <img src="/Images/facebook.png" alt="">
+                </div><br><br>
+                <div class="twitter">
+                    <a href="https://twitter.com/SuroxYT" target="_blank" type="button">Twitter</a>
+                    <img src="/Images/twitter.png" alt="">
+                </div><br><br>
+                <div class="linkedin" style="padding: 0; margin: 0;">
+                    <a href="https://www.linkedin.com/in/surajit-das-b18a91220" target="_blank"
+                        type="button">linkedin</a>
+                    <img src="/Images/linkedin.png" alt="">
+                </div>
+            </div>
+            <div class="location hidden2">
+                <h1 style="color: whitesmoke;">Location</h1>
+                <div class="google-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23059.99186159951!2d7.404625666628986!3d43.74173393102981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cdc28bfa733ce7%3A0x1002d8bbd550b626!2sMonaco%20Grand%20Prix%20de%20Monaco!5e0!3m2!1sen!2sin!4v1692976169410!5m2!1sen!2sin"style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+            </div>
+
+        </div><br><br>
+    </main>
+    <footer>
+        <div class="news-container" id="newsletter">
+            <form action="">
+                <h3>Subscribe for our weekly newsletter</h3>
+                <div class="inputele">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="someone@gmail.com">
+                </div>
+                <div class="submitele">
+                    <input type="submit" name="submitform" id="submitform">
+                </div>
+            </form>
+        </div><br><br><br><br>
+        <div class="footer">
+            <h3>Developed with love by Surajit Das</h3>
+        </div>
+    </footer>
+</body>
+
+</html>
